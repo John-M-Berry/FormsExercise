@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+
+<body>
+    <h1>Customer Experience Survey</h1>
+    <form>
+        <label for="fastFood">Store Number</label>
+        <select id="fastFood">
+
+            <option hidden value="">Select a Store Number</option>
+            <option value="">114</option>
+            <option value="">42</option>
+            <option value="">314159</option>
+
+        </select>
+        <br>
+        <fieldset>
+            <legend>When You Visited</legend>
+            <label for="dates">
+                Date Visited
+
+                <input type="date" id="dates" name="dates" min="2021-01-01" max="2021-12-31">
+            </label>
+            <label>
+                Time:
+                <input type="time" id="tod" name="tod">
+            </label>
+            <br>
+        </fieldset>
+        <label>
+            First Name
+            <input type="text" placeholder="John">
+        </label>
+        <label>
+            Last Name
+            <input type="text" placeholder="Doe">
+        </label>
+        <br>
+        <label>
+            Email
+            <input type="email" id="userEmail" placeholder="your email">
+        </label>
+        <br>
+        <label for="Radio">Male</label>
+        <input type="radio" id="Radio1" name="radio">
+        <label for="Radio">Female</label>
+        <input type="radio" id="Radio2" name="radio" checked>
+        <br>
+        <label for="exp">Tell us about your experience:</label>
+        <br>
+        <textarea id="exp" cols="25" rows="5"></textarea>
+        <br>
+        <label for="times">
+
+            Times Visited in the Last Month
+            <input type="number" id="times" name="times" min="1" max="30">
+        </label>
+        <br>
+        <label>
+            Please Check the Box if you would like to be contacted about your experience
+            <input type="checkbox">
+        </label>
+        <br>
+        <label for="pwd">
+            Password (5-10 characters in length):
+            
+            <input type="password" id="pwd" name="pwd"
+            minlength="5" maxlength="10"
+            title="Please enter a password that is 5 to 10 characters in length">
+        </label>
+<br>
+        <input type="reset">
+
+        <input type="submit">
+
+
+    </form>
+</body>
+
+</html>
